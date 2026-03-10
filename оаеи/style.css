@@ -1,0 +1,104 @@
+body {
+    font-family:'Chiron GoRound TC', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    margin: 0px;
+    padding:0px;
+}
+
+h1 {
+    color: rgb(146, 251, 255); /* цвет заголовка */
+    text-align: center; /* выравнивание заголовка по центру */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family:'Chiron GoRound TC', sans-serif;
+    margin: 20px 0;
+
+}   
+
+p {
+    text-align: center;
+    font-family:'Chiron GoRound TC', sans-serif;
+    margin: 10px 0;
+}
+
+ul {
+    background: rgb(203, 203, 203); /* белый фон для списка */
+    padding: 15px; /* отступы внутри списка */
+    border-radius: 8px; /* скругление углов */
+    max-width: 600px;
+    margin: 20px auto;
+    text-align:center;
+}
+
+li {
+    margin: 8px 0; /* отступы между элементами списка */
+    padding: 12px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+li:last-child {
+    border-bottom: none; /* удаление нижней границы у последнего элемента списка */
+}
+
+li:hover {
+   background-color: rgba(0,0,0,0.1);
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+
+.done {
+    text-decoration: line-through;
+    color:rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* уменьшение размера шрифта на мобильных устройствах */
+    }
+
+    h1 {
+        font-size: 22px; /* уменьшение размера заголовка на мобильных устройствах */
+    }
+
+    ul {
+        max-width: 95%; /* адаптация ширины списка на мобильных устройствах */
+        padding: 10px;;
+    }
+
+    li {
+        font-size: 16px; /* уменьшение размера текста в элементах списка на мобильных устройствах */
+        padding: 10px;;    
+    }
+}
+
+.done {
+    text-decoration: line-through;
+    color:rgb(93, 93, 93);
+}
+
+.done.light {
+    background-color: #fff;
+    color: #222;
+}
+
+body.dark {
+    background-color: #222;
+    color: #ffffff
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #444;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+button.delete:hover {
+    color: red;
+    transform: rotate(90deg)
+
+}
